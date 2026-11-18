@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpack-template</title>
+  </head>
+  <body>
+    <form>
+      <label for="mail">
+        I would like you to provide me with an email address:
+      </label>
+      <input type="email" id="mail" name="mail" />
+      <button>Submit</button>
+    </form>
+
+    <form>
+      <label for="mail2">Email address (@example.com only):</label>
+      <input type="email2" id="mail2" name="mail2" />
+      <button>Submit</button>
+    </form>
+
+    <form novalidate id="form-noval">
+      <p>
+        <label for="mail-noval">
+          <span>Please enter an email address *:</span>
+          <input
+            type="email"
+            id="mail-noval"
+            name="mail-noval"
+            required
+            minlength="8"
+          />
+          <span id="error" class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
